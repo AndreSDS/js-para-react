@@ -6,6 +6,5 @@ import "./style.css";
 import { BoardGame } from "./src/objects";
 
 const $root = document.querySelector("#root");
-const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+$root.insertAdjacentHTML("beforeend", `${BoardGame(6)}`);
