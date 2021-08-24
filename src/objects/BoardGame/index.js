@@ -1,5 +1,5 @@
-import {ScoreBoard} from '../../objects';
 import { CardGame } from "../../components";
+import { ScoreBoard } from "../../objects";
 import "./style.css";
 
 export function BoardGame(amountCards) {
