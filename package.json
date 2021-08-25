@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.4.4",
-    "gitmoji-cli": "^4.5.1"
+    "gitmoji-cli": "^4.5.1",
+    "vite": "^2.5.1"
   }
 }
