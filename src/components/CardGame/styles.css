@@ -1,26 +1,10 @@
 .card-game {
+  box-sizing: border-box;
+  width: var(--width);
+  height: var(--height);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 160px;
   background-color: #051932;
   border: 4px solid var(--floral-white);
-}
-
-/* create a class to flip the card */
-.flip {
-  width: 0;
-  transform: rotateY(180deg);
-}
-
-/* create a class front of the card */
-.front-of-card {
-  background-color: #051932;
-}
-
-/*create a class back of the card */
-.back-of-card {
-  display: none;
-  background-color: #051932;
 }

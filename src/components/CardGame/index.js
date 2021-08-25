@@ -7,17 +7,11 @@ const cardGame = document.querySelector('article.card-game');
 
 export function CardGame(icon = 'alura-pixel', alt="logo da alura") {
 
-  return `
+  return /*html*/`
     <article class="card-game">
-
-          <div class="front-of-card">
-            <img src="src/images/${icon}.png" alt="${alt}" />
-          </div>
-
-          <div class="back-of-card">
+          <div>
             <img src="src/images/${icon}.png" alt="${alt}">
           </div>
-
     </article>
   `;
 }
