@@ -3,15 +3,15 @@ import { CardGame } from "../index";
 import "./style.css";
 
 export function CardFrontBack() {
-  //function to add class flip to card
-  const flipCard = () => {
-    console.log("flip");
-    // const card = document.querySelector(".card-front-back");
-    // card.classList.toggle("flip");
+  window.cardFrontBack = {};
+  window.cardFrontBack.flipCard = (event) => {
+    const clickOrigin = event.target;
+    const card = clickOrigin.closest('.card-front-back');
+    card.classList.toggle("flip");
   };
 
   return /*html*/ `
-    <article class="card-front-back" onclick="${flipCard()}">
+    <article class="card-front-back" onclick="cardFrontBack.flipCard(event)">
       <div class="card-front">
         ${CardGame()}
       </div>
