@@ -1,0 +1,32 @@
+.score {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.points-container {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  width: 5rem;
+  padding: 0 2px;
+  gap: 2px;
+  background: var(--floral-white);
+  border: 2px solid var(--fiery-rose);
+  box-sizing: border-box;
+}
+
+.points {
+  height: 14px;
+  width: 14px;
+  background: var(--old-silver);
+}
+
+h1 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: var(--sandstorm);
+}
