@@ -1,14 +1,17 @@
 import { CardFrontBack } from "../../components";
-import { ScoreBoard } from "../../objects";
+import { cards } from "./data";
 import "./style.css";
 
 export function BoardGame(amountCards) {
-  const $htmlCardFrontBack = CardFrontBack();
-  const $htmlBoardGame = $htmlCardFrontBack.repeat(amountCards || 1);
+  // const $htmlBoardGame = $htmlCardFrontBack.repeat(amountCards || 1);
+  const htmlCardsList = cards.map((card) =>
+    CardFrontBack(card.icon, card.altIcon)
+  );
+  const $htmlCards = htmlCardsList.join("");
 
-  return /*html*/`
+  return /*html*/ `
     <section class="board-game">
-      ${$htmlBoardGame}
+      ${$htmlCards}
     </section>
   `;
 }
