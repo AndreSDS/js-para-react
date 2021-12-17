@@ -1,19 +1,11 @@
 import "./style.css";
 
-export function PlayerScore() {
+export function PlayerScore(points = 0) {
   return /*html*/ `
-    <article class="score">
-      <div class="points-container">
-        <div class="points"></div>
-        <div class="points"></div>
-        <div class="points"></div>
-      </div>
-        <h1>vs</h1>
-      <div class="points-container">
-        <div class="points"></div>
-        <div class="points"></div>
-        <div class="points"></div>
-      </div>
-    </article>
+    <ol class="player-score" data-points="${points}">
+      <li class="point"></li>
+      <li class="point"></li>
+      <li class="point"></li>
+    </ol>
   `;
 }

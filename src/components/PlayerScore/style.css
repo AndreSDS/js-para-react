@@ -1,32 +1,32 @@
-.score {
-  height: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.points-container {
-  display: flex;
-  align-items: center;
-  height: 2rem;
-  width: 5rem;
-  padding: 0 2px;
-  gap: 2px;
-  background: var(--floral-white);
-  border: 2px solid var(--fiery-rose);
+.player-score {
   box-sizing: border-box;
+  height: 20px;
+  width: 50px;
+  background-color: var(--floral-white);
+  border: 2px solid var(--fiery-rose);
+  padding: 1px;
+  display: flex;
+  gap: 1px;
 }
 
-.points {
-  height: 14px;
-  width: 14px;
-  background: var(--old-silver);
+.player-score > .point {
+  background-color: var(--old-silver);
+  height: auto;
+  width: 33%;
 }
 
-h1 {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-  text-align: center;
-  color: var(--sandstorm);
+.player-score[data-points="1"] > .point:first-child {
+  background-color: var(--mantis);
+}
+
+.player-score[data-points="2"] {
+  flex-direction: row-reverse;
+}
+
+.player-score[data-points="2"] > .point:nth-child(n+2) {
+  background-color: var(--mantis);
+}
+
+.player-score[data-points="3"] > .point:nth-child(n+3) {
+  background-color: var(--mantis);
 }
