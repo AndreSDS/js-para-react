@@ -6,7 +6,7 @@ export function ScoreBoard() {
 
   return /*html*/`
     <header class="score-board">
-      ${ArrowDown()}
+      ${ArrowDown(1)}
       ${PlayerName('Player1')}
       ${PlayerScore(2)}
       ${VsPlayer()}
